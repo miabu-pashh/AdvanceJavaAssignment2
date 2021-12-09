@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.url">jdbc:mysql://localhost:3306/maibu</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">maibu</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		
+		<property name="hibernate.show.sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<property name="hibernate.cache.use_second_level_cache">true</property>
+		<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
+		<property name="hibernate.cache.use_query_cache">true</property>
+		<mapping class="com.nagarro.Product"/>
+		
+		
+		
+	</session-factory>
+
+</hibernate-configuration>
